@@ -3,6 +3,7 @@ import LoadingButton from '@mui/lab/LoadingButton'
 import { useAppDispatch, useAppSelector } from '.'
 import { useEffect } from 'react'
 import { checkConnectedRequest } from './store/app/slice'
+import { useTranslation } from 'react-i18next'
 
 const theme = createTheme({
   palette: {
@@ -24,12 +25,14 @@ const theme = createTheme({
 function App() {
   const { connected } = useAppSelector((state) => state.app)
   const dispatch = useAppDispatch()
-
-  console.log('connected', connected)
+  const { t } = useTranslation()
+  console.log('connected', t('success'))
 
   useEffect(() => {
+    console.log('connected', connected)
+
     dispatch(checkConnectedRequest())
-  }, [dispatch])
+  }, [connected, dispatch])
 
   return (
     <ThemeProvider theme={theme}>
