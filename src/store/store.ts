@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import createSagaMiddleware from 'redux-saga'
 
-import rootReducer from './rootReducer'
-import rootSaga from './rootSaga'
+import { rootReducer } from './rootReducer'
+import { rootSaga } from './rootSaga'
 
-const createStore = (initialState = {}) => {
+export const createStore = (initialState = {}) => {
   const sagaMiddleware = createSagaMiddleware()
 
   const store = configureStore({
@@ -25,5 +25,3 @@ const createStore = (initialState = {}) => {
 
   return store
 }
-
-export default createStore

@@ -1,9 +1,10 @@
+import { useEffect } from 'react'
 import { Box, createTheme, CssBaseline, Paper, ThemeProvider, Typography } from '@mui/material'
 import LoadingButton from '@mui/lab/LoadingButton'
-import { useAppDispatch, useAppSelector } from '.'
-import { useEffect } from 'react'
-import { checkConnectedRequest } from './store/app/slice'
 import { useTranslation } from 'react-i18next'
+
+import { useAppDispatch, useAppSelector } from '.'
+import { checkConnectedRequest } from './store/app/slice'
 
 const theme = createTheme({
   palette: {
@@ -22,7 +23,7 @@ const theme = createTheme({
   },
 })
 
-function App() {
+export const App = () => {
   const { connected } = useAppSelector((state) => state.app)
   const dispatch = useAppDispatch()
   const { t } = useTranslation()
@@ -54,5 +55,3 @@ function App() {
     </ThemeProvider>
   )
 }
-
-export default App

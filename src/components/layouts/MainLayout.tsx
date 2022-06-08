@@ -1,11 +1,9 @@
-import React, { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 interface IMainLayoutProps {
   children: ReactNode
 }
 
-const MainLayout: FC<IMainLayoutProps> = ({ children }) => {
+export const MainLayout = ({ children }: IMainLayoutProps) => {
   return <div>{children}</div>
 }
-
-export default MainLayout

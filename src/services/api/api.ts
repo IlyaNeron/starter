@@ -1,5 +1,5 @@
 import axios from 'axios'
-import interceptorConfig from './interceptor'
+import { interceptorConfig } from './interceptor'
 
 export const apiTarget = process.env.REACT_APP_BASE_URL
 

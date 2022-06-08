@@ -1,11 +1,9 @@
 import apiInstance from '../api'
 
-const userApi = {
+export const userApi = {
   checkConnected: async () => {
     const response = await apiInstance.get('/app/check-connected')
 
     return response.data
   },
 }
-
-export default userApi

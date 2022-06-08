@@ -12,11 +12,17 @@ const slice = createSlice({
     checkConnected: (state, action: PayloadAction<boolean>) => {
       state.connected = action.payload
     },
+    // TODO: what about instead of
+    //      (state) => {
+    //  we will use a shorter version and write
+    //      state => {
+    //  In prettier this is achieved with "arrowParens": "avoid"
+    //  but current ESLint config doesn't like it (needs adjustments).
     checkConnectedRequest: (state) => {
       state.status = 'loading'
     },
   },
 })
 
-export default slice.reducer
+export const appReducer = slice.reducer
 export const { checkConnected, checkConnectedRequest } = slice.actions

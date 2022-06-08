@@ -1,7 +1,7 @@
 import { all, spawn } from 'redux-saga/effects'
-import appWatcherSaga from './app/saga'
+import { appWatcherSaga } from './app/saga'
 
-export default function* rootSaga() {
+export function* rootSaga() {
   const sagas = [appWatcherSaga]
 
   yield all(sagas.map(spawn))

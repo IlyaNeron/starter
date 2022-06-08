@@ -1,8 +1,7 @@
-import React from 'react'
-import { HOME, NO_MATCH } from '.'
 import { Routes, Route } from 'react-router-dom'
+import { HOME, NO_MATCH } from './'
 
-const PublicRouter = () => {
+export const PublicRouter = () => {
   return (
     <Routes>
       <Route index element={<HOME.component />} />
@@ -11,5 +10,3 @@ const PublicRouter = () => {
     </Routes>
   )
 }
-
-export default PublicRouter

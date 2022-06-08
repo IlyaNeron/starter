@@ -1,9 +1,12 @@
 import { ChangeEvent, useState } from 'react'
 
-type TInputValue = string | number
+// TODO: do we need TUseInputValue here?
+//  useState sees initialValue types without explicit declaration on line 9
 
-export const useInput = (initialValue: TInputValue) => {
-  const [value, setValue] = useState<TInputValue>(initialValue)
+type TUseInputValue = string | number
+
+export const useInput = (initialValue: TUseInputValue) => {
+  const [value, setValue] = useState<TUseInputValue>(initialValue)
 
   const handler = (event: ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value)
