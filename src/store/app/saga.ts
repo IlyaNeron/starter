@@ -1,7 +1,7 @@
-import { checkConnected, checkConnectedRequest } from './slice'
 import { delay, put, takeLatest } from 'redux-saga/effects'
+import { checkConnected, checkConnectedRequest } from './slice'
 
-export default function* appWatcherSaga() {
+export function* appWatcherSaga() {
   yield takeLatest(checkConnectedRequest.type, checkConnectedSaga)
 }
 

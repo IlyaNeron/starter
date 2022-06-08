@@ -127,6 +127,9 @@ psd
 thumb
 sketch
 
+### WebStorm ###
+.idea
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/tasks.json

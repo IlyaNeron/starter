@@ -1,6 +1,6 @@
 import { AxiosError, AxiosResponse } from 'axios'
 
-const interceptorConfig = {
+export const interceptorConfig = {
   response: (response: AxiosResponse) => {
     return Promise.resolve(response)
   },
@@ -18,5 +18,3 @@ const interceptorConfig = {
     return Promise.reject(error)
   },
 }
-
-export default interceptorConfig
