@@ -3,6 +3,8 @@ import { Box, createTheme, CssBaseline, Paper, ThemeProvider, Typography } from 
 import LoadingButton from '@mui/lab/LoadingButton'
 import { useTranslation } from 'react-i18next'
 
+import { ReactQueryExample } from 'components/common/ReactQueryExample'
+
 import { useAppDispatch, useAppSelector } from '.'
 import { checkConnectedRequest } from './store/app/slice'
 
@@ -51,6 +53,7 @@ export const App = () => {
           </Typography>
           <LoadingButton loading>Test</LoadingButton>
         </Paper>
+        <ReactQueryExample />
       </Box>
     </ThemeProvider>
   )

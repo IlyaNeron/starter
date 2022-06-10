@@ -10,4 +10,4 @@ const apiInstance = axios.create({
 
 apiInstance.interceptors.response.use(interceptorConfig.response, interceptorConfig.error)
 
-export default apiInstance
+export { apiInstance }
