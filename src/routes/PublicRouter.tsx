@@ -1,12 +1,13 @@
 import { Routes, Route } from 'react-router-dom'
-import { HOME, NO_MATCH } from './'
+
+import * as ROUTES from './routes'
 
 export const PublicRouter = () => {
   return (
     <Routes>
-      <Route index element={<HOME.component />} />
-      <Route path={HOME.path} element={<HOME.component />} />
-      <Route path={NO_MATCH.path} element={<NO_MATCH.component />} />
+      <Route index element={<ROUTES.HOME.component />} />
+      <Route path={ROUTES.HOME.path} element={<ROUTES.HOME.component />} />
+      <Route path={ROUTES.NO_MATCH.path} element={<ROUTES.NO_MATCH.component />} />
     </Routes>
   )
 }

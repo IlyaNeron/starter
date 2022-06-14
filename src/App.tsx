@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 
 import { ReactQueryExample } from 'components/common/ReactQueryExample'
 
-import { useAppDispatch, useAppSelector } from '.'
+import { useAppDispatch, useAppSelector } from './'
 import { checkConnectedRequest } from './store/app/slice'
 
 const theme = createTheme({

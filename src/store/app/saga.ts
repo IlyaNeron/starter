@@ -1,4 +1,5 @@
 import { delay, put, takeLatest } from 'redux-saga/effects'
+
 import { checkConnected, checkConnectedRequest } from './slice'
 
 export function* appWatcherSaga() {
