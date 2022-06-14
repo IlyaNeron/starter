@@ -202,3 +202,5 @@ _**[REQUIRES DISCUSSION]**_
 
 - Development branch should be first updated with the latest main/master branch before merging.
 - Development branch should be squashed and merged into main/master branch.
+- After merging development branch into main/master branch the development branch should be deleted.
+A new branch with the same name can be created if needed.
