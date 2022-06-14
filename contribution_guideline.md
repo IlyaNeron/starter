@@ -73,6 +73,11 @@ import { SubComponent1, SubComponent2, SubComponent3 } from './components'
 
 ## Imports / exports
 
+### Importing React itself
+
+Don't import React in every single file. It can be imported once at the very start of the
+application which is usually can be found at `{project_root}/src/index.ts`.
+
 ### No export default
 
 Avoid using `export default` as much as possible. Use named `export/import` instead.
@@ -189,6 +194,11 @@ and it can not be done using Material UI theme, use `@emotion`.
 Hint: `node-check-updates` library can be used to check if there are newer dependency versions
 available.
 
-## Commits and Pull Requests
+## Working with GIT
 
 _**[REQUIRES DISCUSSION]**_
+
+### Pull requests
+
+- Development branch should be first updated with the latest main/master branch before merging.
+- Development branch should be squashed and merged into main/master branch.
