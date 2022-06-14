@@ -1,5 +1,1 @@
-const NoMatch = () => {
-  return <div>NoMatch</div>
-}
-
-export default NoMatch
+export { NoMatchPage as default } from './NoMatchPage'

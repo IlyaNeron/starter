@@ -1,4 +1,4 @@
-import { useQueryClient, useQuery } from 'react-query'
+import { useQuery, useQueryClient } from 'react-query'
 
 import { postApi } from 'services/api/app'
 

@@ -4,6 +4,7 @@ export const interceptorConfig = {
   response: (response: AxiosResponse) => {
     return Promise.resolve(response)
   },
+
   error: (error: AxiosError) => {
     // const status = error.response?.status
 
