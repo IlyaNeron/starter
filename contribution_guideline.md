@@ -160,8 +160,8 @@ const testString2: string = 'random sting'
 ### Other
 
 - _**[REQUIRES DISCUSSION]**_ useInput example
-- _**[REQUIRES DISCUSSION]**_ `type` vs `interface`
-- _**[REQUIRES DISCUSSION]**_ `type` and `interface` naming convention
+- _**[REQUIRES DISCUSSION]**_ `interface`
+- _**[REQUIRES DISCUSSION]**_ `T-type` and `I-interface` naming convention
 
 ## CSS
 
@@ -187,18 +187,17 @@ and it can not be done using Material UI theme, use `@emotion`.
 
 - Do not use `^` symbol in dependency version.
 - Each dependency update pull request should update one dependency at a time.
-- _**[REQUIRES DISCUSSION]**_ Dependency update schedule.
 
 Hint: `node-check-updates` library can be used to check if there are newer dependency versions
 available.
 
 ## Working with GIT
 
-_**[REQUIRES DISCUSSION]**_
+- TODO: Illia
 
 ### Pull requests
 
 - Development branch should be first updated with the latest main/master branch before merging.
 - Development branch should be squashed and merged into main/master branch.
 - After merging development branch into main/master branch the development branch should be deleted.
-A new branch with the same name can be created if needed.
+  A new branch with the same name can be created if needed.
