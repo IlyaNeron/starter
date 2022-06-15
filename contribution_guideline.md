@@ -372,13 +372,13 @@ minor or patch update that does not require additional code refactoring.
 - After merging development branch into main/master branch the development branch should be deleted.
   A new branch with the same name can be created if needed.
 
-Pull request name should short and contain Jira ticket number.
+Pull request name should be short and contain Jira ticket number.
 Example: `Story [SMPFM-9]`
 
 Pull request description should obey next pattern:
 
-1st line: `{type} [Jira ticket number] Jira ticket title`
-2nd line: `{Link to the Jira ticket}`
+- 1st line: `{type} [Jira ticket number] Jira ticket title`
+- 2nd line: `{Link to the Jira ticket}`
 
 Example:
 
