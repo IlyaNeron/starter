@@ -18,9 +18,10 @@ More about how to use react-query and example is [here](https://react-query.tans
 
 ### Network
 
-Network layer incapsulated under `src/services/api`. `axios` used as an http client.
+Network layer encapsulated under `src/services/api`. `axios` used as an HTTP client.
 
 Sub-structure:
+
 - `src/services/api/api` - configured common http client
 - `src/services/api/interceptors` - interceptors attached to common http client
 - `src/services/api/app/*` - domain resources, every file represent own rest resource (e.g. location, assets, etc.)

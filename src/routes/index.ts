@@ -1,1 +1,1 @@
-export { PublicRouter } from './PublicRouter'
+export { PublicRouter } from './PublicRouter';

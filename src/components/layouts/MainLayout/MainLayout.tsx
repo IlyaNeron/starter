@@ -1,9 +1,9 @@
-import { ReactNode } from 'react'
+import { ReactNode } from 'react';
 
 interface IMainLayoutProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 export const MainLayout = ({ children }: IMainLayoutProps) => {
-  return <div>{children}</div>
-}
+  return <div>{children}</div>;
+};

@@ -1,18 +1,18 @@
-import { useQuery, useQueryClient } from 'react-query'
+import { useQuery, useQueryClient } from 'react-query';
 
-import { postApi } from 'services/api/app'
+import { postApi } from 'services/api/app';
 
 export const ReactQueryExample = () => {
-  useQueryClient()
-  const { status, data, error, isFetching } = useQuery('posts', postApi.getAllPosts)
+  useQueryClient();
+  const { status, data, error, isFetching } = useQuery('posts', postApi.getAllPosts);
 
   if (status === 'loading') {
-    return <div>Loading posts...</div>
+    return <div>Loading posts...</div>;
   }
 
   if (status === 'error') {
-    console.error(error)
-    return <div>Something went wrong...</div>
+    console.error(error);
+    return <div>Something went wrong...</div>;
   }
 
   return (
@@ -25,5 +25,5 @@ export const ReactQueryExample = () => {
 
       {isFetching && <div>Background updating...</div>}
     </>
-  )
-}
+  );
+};

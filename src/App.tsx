@@ -1,12 +1,12 @@
-import { useEffect } from 'react'
-import { Box, createTheme, CssBaseline, Paper, ThemeProvider, Typography } from '@mui/material'
-import LoadingButton from '@mui/lab/LoadingButton'
-import { useTranslation } from 'react-i18next'
+import { useEffect } from 'react';
+import { Box, createTheme, CssBaseline, Paper, ThemeProvider, Typography } from '@mui/material';
+import LoadingButton from '@mui/lab/LoadingButton';
+import { useTranslation } from 'react-i18next';
 
-import { ReactQueryExample } from 'components/common/ReactQueryExample'
+import { ReactQueryExample } from 'components/common/ReactQueryExample';
 
-import { useAppDispatch, useAppSelector } from './'
-import { checkConnectedRequest } from './store/app/slice'
+import { useAppDispatch, useAppSelector } from './';
+import { checkConnectedRequest } from './store/app/slice';
 
 const theme = createTheme({
   palette: {
@@ -23,19 +23,19 @@ const theme = createTheme({
       contrastText: '#000',
     },
   },
-})
+});
 
 export const App = () => {
-  const { connected } = useAppSelector((state) => state.app)
-  const dispatch = useAppDispatch()
-  const { t } = useTranslation()
-  console.log('connected', t('success'))
+  const { connected } = useAppSelector(state => state.app);
+  const dispatch = useAppDispatch();
+  const { t } = useTranslation();
+  console.log('connected', t('success'));
 
   useEffect(() => {
-    console.log('connected', connected)
+    console.log('connected', connected);
 
-    dispatch(checkConnectedRequest())
-  }, [connected, dispatch])
+    dispatch(checkConnectedRequest());
+  }, [connected, dispatch]);
 
   return (
     <ThemeProvider theme={theme}>
@@ -56,5 +56,5 @@ export const App = () => {
         <ReactQueryExample />
       </Box>
     </ThemeProvider>
-  )
-}
+  );
+};

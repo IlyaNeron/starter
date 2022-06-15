@@ -1,1 +1,1 @@
-export { ReactQueryExample } from './ReactQueryExample'
+export { ReactQueryExample } from './ReactQueryExample';

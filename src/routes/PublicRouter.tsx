@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 
-import * as ROUTES from './routes'
+import * as ROUTES from './routes';
 
 export const PublicRouter = () => {
   return (
@@ -9,5 +9,5 @@ export const PublicRouter = () => {
       <Route path={ROUTES.HOME.path} element={<ROUTES.HOME.component />} />
       <Route path={ROUTES.NO_MATCH.path} element={<ROUTES.NO_MATCH.component />} />
     </Routes>
-  )
-}
+  );
+};
