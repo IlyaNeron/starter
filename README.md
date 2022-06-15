@@ -16,9 +16,11 @@ More about how to use react-query and example is [here](https://react-query.tans
   suggestion is to create file with enums where should be stored the names of the queries. Second parameter is a function that returns a promise that resolves the data, or
   throws an error
 
-### Network layer
+### Network
 
-- Library [axios](https://axios-http.com/docs/intro)
-- General axios [instance](https://github.com/IlyaNeron/starter/blob/main/src/services/api/api.ts)
-- Axios [interceptors](https://github.com/IlyaNeron/starter/blob/main/src/services/api/interceptor.ts)
-- Axios usage [example](https://github.com/IlyaNeron/starter/blob/main/src/services/api/app/postApi.ts)
+Network layer incapsulated under `src/services/api`. `axios` used as an http client.
+
+Sub-structure:
+- `src/services/api/api` - configured common http client
+- `src/services/api/interceptors` - interceptors attached to common http client
+- `src/services/api/app/*` - domain resources, every file represent own rest resource (e.g. location, assets, etc.)
