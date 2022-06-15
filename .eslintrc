@@ -22,7 +22,6 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "no-bitwise": 0,
     "@typescript-eslint/ban-ts-comment": "off",
     "react-hooks/rules-of-hooks": "error",

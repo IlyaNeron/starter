@@ -3,18 +3,11 @@
 ### Redux based approach (global store):
 
 General rules could be found [here](https://redux-saga.js.org/docs/introduction/GettingStarted)
-
-?? Initially we want to create start, success, failed actions but for now we don't know the redux structure
-
-### react-query (local state):
-
-More about how to use react-query and example is [here](https://react-query.tanstack.com/overview).
-
-- Import useQuery, useQueryClient
-- instantiate useQueryClient()
-- use useQuery hook with params you [need](https://react-query.tanstack.com/guides/queries). First param should go the unique key for the query,
-  suggestion is to create file with enums where should be stored the names of the queries. Second parameter is a function that returns a promise that resolves the data, or
-  throws an error
+As approach of resolving redux and saga could be found [here](https://github.com/reduxjs/redux-toolkit/blob/master/docs/api/createSlice.mdx)
+To be able to interact with store with our components we will need:
+- use useSelector in component
+- add appropriate watchers (they always come first) and workers in [saga.ts](https://github.com/IlyaNeron/starter/blob/main/src/store/app/saga.ts)
+- make changes in [slice.ts](https://github.com/IlyaNeron/starter/blob/main/src/store/app/slice.ts)
 
 ### Network
 
