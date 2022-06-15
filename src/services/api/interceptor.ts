@@ -1,8 +1,8 @@
-import { AxiosError, AxiosResponse } from 'axios'
+import { AxiosError, AxiosResponse } from 'axios';
 
 export const interceptorConfig = {
   response: (response: AxiosResponse) => {
-    return Promise.resolve(response)
+    return Promise.resolve(response);
   },
 
   error: (error: AxiosError) => {
@@ -16,6 +16,6 @@ export const interceptorConfig = {
     //   store.dispatch(logout())
     // }
 
-    return Promise.reject(error)
+    return Promise.reject(error);
   },
-}
+};

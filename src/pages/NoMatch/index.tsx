@@ -1,1 +1,1 @@
-export { NoMatchPage as default } from './NoMatchPage'
+export { NoMatchPage as default } from './NoMatchPage';

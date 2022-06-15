@@ -1,3 +1,3 @@
 export const NoMatchPage = () => {
-  return <div>NoMatch</div>
-}
+  return <div>NoMatch</div>;
+};

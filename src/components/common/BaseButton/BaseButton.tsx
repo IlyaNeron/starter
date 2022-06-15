@@ -1,9 +1,9 @@
-import { Button, ButtonTypeMap } from '@mui/material'
+import { Button, ButtonTypeMap } from '@mui/material';
 
 interface IBaseButtonProps extends ButtonTypeMap {
-  text: string
+  text: string;
 }
 
 export const BaseButton = ({ text }: IBaseButtonProps) => {
-  return <Button>{text}</Button>
-}
+  return <Button>{text}</Button>;
+};
