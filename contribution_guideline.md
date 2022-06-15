@@ -54,8 +54,6 @@ There is a small chance that `AbstractComponent` will not use something from its
 folder. The difference `./components/index.ts` file provides will be visible in the
 AbstractComponent.ts file:
 
-without
-
 ```javascript
 // without ./components/index.ts
 import { SubComponent1 } from './components/SubComponent1'
